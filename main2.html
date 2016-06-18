@@ -40,7 +40,25 @@
                         $("div#imgBox1").animate({opacity:"0" , right:"0" , top:"0"} , 200);
                         $("div#imgBox2").animate({opacity:"0" , bottom:"0px" , left:"0px"} , 200);
                     }
-                )
+                );
+                
+                $("div#fourthTextBlock").hover
+                (
+                    function()
+                    {
+                        $("div#fourthTextRect").css({"background-color":"white"});
+                        $("div#fourthTextRect p").css({"color":"rgb(30 , 30 , 30)"});
+                        $("div#imgBox1_4").animate({opacity:"1" , right:"20px" , top:"20px"} , 200);
+                        $("div#imgBox2_4").animate({opacity:"1" , bottom:"20px" , left:"20px"} , 200);
+                    },
+                    function()
+                    {
+                        $("div#fourthTextRect").css({"background-color":"transparent"});
+                        $("div#fourthTextRect p").css({"color":"white"});
+                        $("div#imgBox1_4").animate({opacity:"0" , right:"0" , top:"0"} , 200);
+                        $("div#imgBox2_4").animate({opacity:"0" , bottom:"0px" , left:"0px"} , 200);
+                    }
+                );
             }
         );
         
@@ -74,6 +92,11 @@
             @import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
             @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
             @import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+            @font-face 
+            {
+                font-family: 'MeeHei'; /*a name to be used later*/
+                src: url('wqy-microhei.ttc'); /*URL to font*/
+            }
                      
             spam
             {
@@ -170,6 +193,7 @@
                 z-index: 1; 
                 font-size: 60px;
                 opacity:0;
+                font-family: 'Meehai';
             }
             
             /*這是其他次要區域的div*/
@@ -431,7 +455,7 @@
                 opacity: 0;
             }
             
-            div#imgBox1 #child1
+            div#imgBox1 .child1
             {
                position: absolute;
                width:100%;
@@ -441,7 +465,7 @@
                background-color: white;
             }
             
-            div#imgBox1 #child2
+            div#imgBox1 .child2
             {
                position: absolute;
                width:26%;
@@ -533,7 +557,7 @@
                     width:75%;
                     text-align: center;
                     margin:auto;
-                    margin-top:4%;
+                    margin-top:3%;
                     color:white;
                     line-height: 200%;
                 }
@@ -551,7 +575,192 @@
                 height:50%;
             }
             
+                div#fourthTextBlock a#fourthRightBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:40%;
+                    height:100%;
+                    right:0;
+                }
+                    div#fourthTextBlock img
+                    {
+                        position: absolute;
+                        width:100%;
+                        height:100%;
+                    }
+                    div#fourthTextRect
+                    {
+                        position: relative;
+                        width:265px;
+                        height:80px;
+                        border: 3px solid white;
+                        margin:auto;
+                        top:38%;
+                    }
+                        div#fourthTextRect p
+                        {
+                            display: block;
+                            color: white;
+                            position: absolute;
+                            font-family: 'cwTeXHei', sans-serif;
+                            font-size:28px;
+                            left:78px;
+                        }
+                    
+                    div#imgBox1_4
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        top:0px;
+                        right:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox1_4 #child1_4
+                    {
+                    position: absolute;
+                    width:100%;
+                    height: 25%;
+                    top:0;
+                    right:0;
+                    background-color: white;
+                    }
+                    
+                    div#imgBox1_4 #child2_4
+                    {
+                    position: absolute;
+                    width:26%;
+                    height: 100%;
+                    top:0;
+                    right:0;
+                    background-color: white;
+                    }
+                    
+                    div#imgBox2_4
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        bottom:0px;
+                        left:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox2_4 #child1_4
+                    {
+                    position: absolute;
+                    width:100%;
+                    height: 25%;
+                    bottom:0;
+                    left:0;
+                    background-color: white;
+                    }
+                    
+                    div#imgBox2_4 #child2_4
+                    {
+                    position: absolute;
+                    width:26%;
+                    height: 100%;
+                    bottom:0;
+                    left:0;
+                    background-color: white;
+                    }
+                    
+                div#fourthTextBlock div#fourthArrow
+                {
+                    position: absolute;
+                    width:0;
+                    height:0;
+                    border-top: 20px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-left:20px solid white; 
+                    left:60%;
+                    top:45%;
+                }
+                
+                div#fourthTextBlock div#fourthLeftBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:60%;
+                    height:100%;
+                    left:0;
+                    background-color:white;
+                }
+                    div#fourthTextBlock div#fourthLeftBlock p#introTitle_4
+                    {
+                        position: static;
+                        width:50%;
+                        height:20px;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:7%;
+                        color:rgb(189 , 144 , 47);
+                    }
+                    div#fourthTextBlock div#fourthLeftBlock div#introLine_4
+                    {
+                        position: static;
+                        width:80%;
+                        height:1px;
+                        background-color: grey;
+                        margin:auto;
+                        margin-top:2%;
+                        margin-bottom:0%;
+                        opacity:0.3;
+                    }
+                    div#fourthTextBlock div#fourthLeftBlock p#introText_4
+                    {
+                        position: static;
+                        width:75%;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:3%;
+                        color:black;
+                        line-height: 200%;
+                    }
             
+            
+            
+            
+            
+            
+            
+            /*這是其他次要區域的div*/
+            div#fifthTextBlock
+            {
+                position: absolute;
+                top: 250%;
+                left: 0;
+                background-color:lightgreen;
+                width:100%;
+                height:50%;
+            }
+            
+            /*這是其他次要區域的div*/
+            div#sixthTextBlock
+            {
+                position: absolute;
+                top: 300%;
+                left: 0;
+                background-color:yellow;
+                width:100%;
+                height:50%;
+            }
+            
+            /*這是其他次要區域的div*/
+            div#seventhTextBlock
+            {
+                position: absolute;
+                top: 350%;
+                left: 0;
+                background-color:pink;
+                width:100%;
+                height:50%;
+            }
             
         </style>
     </head>
@@ -605,7 +814,7 @@
                 <div id="textRect">
                     <p>了解遮城</p>
                 </div>
-                <div id="imgBox1"><div id="child1"></div><div id="child2"></div></div>
+                <div id="imgBox1"><div class="child1"></div><div class="child2"></div></div>
                 <div id="imgBox2"><div id="child1"></div><div id="child2"></div></div>
             </a>
             <div id="thirdRightBlock">
@@ -621,7 +830,22 @@
         
         
         <div id="fourthTextBlock">
-            
+            <a id="fourthRightBlock" href="https://www.youtube.com/embed/D4G68WZdHAc">
+                <img src="tongHsing.jpg">
+                <div id="fourthTextRect">
+                    <p>洋行之旅</p>
+                </div>
+                <div id="imgBox1_4"><div id="child1_4"></div><div id="child2_4"></div></div>
+                <div id="imgBox2_4"><div id="child1_4"></div><div id="child2_4"></div></div>
+            </a>
+            <div id="fourthLeftBlock">
+                <p id="introTitle_4">三 級 古 蹟 餐 廳</p>
+                <div id="introLine_4"></div>
+                <p id="introText_4">
+                    原德商東興洋行原名為「Julius Mannich & CO.」。是直轄市定古蹟、安平五洋行之一。現在該建築是「安平外商貿易紀念館」。展示安平港昔日外貿的歷史，另外也展示了一些與德國相關的事物。而在建築的前庭，則設有劍橋大飯店經營的露天餐廳。
+                </p>
+            </div>
+            <div id="fourthArrow"></div>
         </div>
         
         <div id="fifthTextBlock">
@@ -629,6 +853,10 @@
         </div>
         
         <div id="sixthTextBlock">
+            
+        </div>
+        
+        <div id="seventhTextBlock">
             
         </div>
         
