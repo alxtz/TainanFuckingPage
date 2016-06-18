@@ -114,6 +114,20 @@
                     }
                 );
                 
+                $("div#menuButton").hover
+                (
+                    function()
+                    {
+                        $("div#stack2").animate({top:"-10%"} , 200);
+                        $("div#stack3").animate({top:"90%"} , 200);
+                    },
+                    function()
+                    {
+                        $("div#stack2").animate({top:"0"} , 200);
+                        $("div#stack3").animate({top:"80%"} , 200);
+                    }
+                );
+                
             }
         );
         
@@ -1265,6 +1279,54 @@
                         line-height: 200%;
                     }
                     
+                div#menuButton
+                {
+                    position: absolute;
+                    width:45px;
+                    height:30px;
+                    right:8%;
+                    top:8%;
+                    background-color: transparent;
+                    cursor:pointer;
+                }
+                
+                    div#stack1
+                    {
+                        position: absolute;
+                        width:100%;
+                        height:20%;
+                        top:40%;
+                        left:0;
+                        background-color: white;
+                    }
+                    
+                    div#stack2
+                    {
+                        position: absolute;
+                        width:100%;
+                        height:20%;
+                        top:0%;
+                        left:0;
+                        background-color: white;
+                    }
+                    
+                    div#stack3
+                    {
+                        position: absolute;
+                        width:100%;
+                        height:20%;
+                        top:80%;
+                        left:0;
+                        background-color: white;
+                    }
+            div#menu
+            {
+                position: fixed;
+                width:100%;
+                height: 100%;
+                background-color: black;
+            }
+                    
             
         </style>
     </head>
@@ -1285,6 +1347,13 @@
             <div id="rightLine"></div>
             <img src="maubi.png" id="maubi">
             <p id="centerText">探 索，安 平 古 堡</p>
+            
+            <div id="menuButton">
+                <div id="stack1"></div>
+                <div id="stack2"></div>
+                <div id="stack3"></div>
+            </div>
+                
         </div>
         
         
