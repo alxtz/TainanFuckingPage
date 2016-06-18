@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+    
+    
+    <head>
+        <meta charset="UTF-8">
+        <script>
+        
+        </script>
+        <style>
+            /*設定body*/
+            body
+            {
+            }
+            
+            /*這是第1塊放影片用的div*/
+            div#firstVideoBlock
+            {
+                position: absolute;
+                min-width: 100%;
+                min-height: 100%;
+                max-width: 100%;
+                max-height: 100%;
+                top: 0;
+                left: 0;
+                border: 1px solid black;
+            }
+            
+            vidoe#video
+            {
+                position: absolute;
+                min-width:100%; 
+                min-length:100%; 
+                top: 0;
+                left: 0;
+            }
+            
+            /*這是其他次要區域的div*/
+            div#secondTextBlock
+            {
+                position: absolute;
+                min-width: 100%;
+                min-height: 100%;
+                top: 100%;
+                left: 0;
+                
+                background-color: red;
+                opacity: 0.1;
+            }
+            
+            /*frameTop*/
+            div#frameTop
+            {
+                position: absolute;
+                min-width: 100%;
+                min-height: 10%;
+                top: 0;
+                left: 0;
+                margin:auto;
+                
+                background-color: lightgreen;
+                opacity: 0.5;
+            }
+            
+            /*frameBottom*/
+            div#frameBottom
+            {
+                position: absolute;
+                min-width: 100%;
+                min-height: 10%;
+                top: 90%;
+                left: 0;
+                background-color: lightgreen;
+                opacity: 0.5;
+            }
+            
+            /*frameLeft*/
+            div#frameLeft
+            {
+                position: absolute;
+                min-width: 8%;
+                min-height: 100%;
+                top: 0;
+                left: 0;
+                background-color: lightgreen;
+                opacity: 0.5;
+            }
+            
+            /*frameRight*/
+            div#frameRight
+            {
+                position: absolute;
+                min-width: 8%;
+                min-height: 100%;
+                top: 0;
+                left: 92%;
+                background-color: lightgreen;
+                opacity: 0.5;
+            }
+            
+            /*topLine*/
+            div#topLine
+            {
+                margin:auto;
+                height: 1px;
+                width:80%;
+                background-color: white;
+                opacity: 1;
+                margin-top:35px;
+            }
+            
+            /*topLine*/
+            div#topLine
+            {
+                margin:auto;
+                height: 1px;
+                width:75%;
+                background-color: white;
+                opacity: 1;
+                margin-top:35px;
+            }
+            
+            /*bottomLine*/
+            div#bottomLine
+            {
+                margin:auto;
+                height: 1px;
+                width:75%;
+                background-color: white;
+                opacity: 1;
+                margin-top: 20px;
+            }
+            
+            /*leftLine*/
+            div#leftLine
+            {
+                position: absolute;
+                margin-left: 50%;
+                margin-top:170%;
+                height: 50%;
+                width:1px;
+                background-color: white;
+                opacity: 1;
+            }
+            
+            /*rightLine*/
+            div#rightLine
+            {
+                position: absolute;
+                margin-left: 50%;
+                margin-top:170%;
+                height: 50%;
+                width:1px;
+                background-color: white;
+                opacity: 1;
+            }
+            
+            /*maubi*/
+            /*
+            img#maubi
+            {
+                position: absolute;
+                height:10%;
+                width: 15%;
+                margin-left:3%;
+                margin-top: 1.5%;
+                border: 1px solid black;
+            }
+            */
+            
+        </style>
+    </head>
+    
+    
+    <body>
+        <div id="firstVideoBlock">
+            <video autoplay muted preload loop id="video">
+                <source src="head.mp4" type="video/mp4">
+            </video>
+            
+            <div id="frameTop">
+                <div id="topLine"></div>
+            </div>   
+        
+            <div id="frameLeft">
+                <div id="leftLine"></div>
+            </div>  
+        
+            <div id="frameRight">
+                <div id="rightLine"></div>
+            </div> 
+        
+            <div id="frameBottom">
+                <div id="bottomLine"></div>
+            </div>
+        
+            <img src="maubi.png" id="maubi">
+        </div>
+        
+        <div id="secondTextBlock">
+        </div>
+    </body>
+    
+    
+</html>
