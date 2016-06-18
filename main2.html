@@ -11,6 +11,14 @@
             google.load("jqueryui" , "1.5.2");
         </script>
         <script>
+        var centerTexts = 
+        [
+            "回 顧 ， 東 興 洋 行" , 
+            "閱 覽 ， 台 南 運 河" ,
+            "造 訪 ， 周 式 蝦 捲" ,
+            "探 索 ， 安 平 古 堡"
+        ];
+            
         $(document).ready
         (
             function()
@@ -170,6 +178,34 @@
                     function()
                     {
                         alert("japanese");
+                        $("p#languageChoose").text("言語の選択");
+                        centerTexts = 
+                        [
+                            "リコール，東光洋ライン" , 
+                            "読 書 ， 台 南 運 河" ,
+                            "訪 問 ， 周エビロール" ,
+                            "探 検 ， 安平古い砦"
+                        ];
+                        $("p#introText1").html("台湾で最も古い都市 - 台南<spam>。</spam>");
+                        $("p#introText2").html("オランダ植民地時代の高官町<spam>、</spam>");
+                        $("p#introText3").html("金城をアップロードする鄭王朝<spam>。</spam>");
+                        $("p#introText4").html("ここでは台湾の歴史発祥の地の一つです<spam>。</spam>");
+                        $("p#beautiful").html("安平の美<spam>。</spam>");
+                        $("p#bfs1").html("安平古い砦<spam>。</spam>");
+                        $("p#bfs2").html("東光洋ライン<spam>。</spam>");
+                        $("p#bfs3").html("寺を創立<spam>。</spam>");
+                        $("p#bfs4").html("小さな砦を安平<spam>。</spam>");
+                        $("p#bfs5").html("台南運河<spam>。</spam>");
+                        $("p#bfs6").html("グレート観音パビリオン<spam>。</spam>");
+                        $("p#bfs7").html("安平ストリート古井<spam>。</spam>");
+                        $("p#bfs8").html("海山ホール<spam>。</spam>");
+                        $("p#bfs9").html("周エビロール<spam>。</spam>");
+                        $("div#textRect p").html("城の学習");
+                        $("p#introTitle").html("東インド会社の市");
+                        $("p#introText").html("この台南、台湾にあり、フォートゼーランディア、オレンジ（オレンジ）の古代都市、。もともと1624年に建てられ、それは台湾初の要塞の建物です。オランダの中心が台湾を支配した後、市内の創業以来、それがありました。安平古堡は、国のモニュメントとして、2モニュメントがモニュメントとしてリストされている台湾の街の名残があります。一般市民天文台の長期的な視点は、よりフォートゼーランディアであると考えられています。しかし、実際には、1970年代の日本の植民地時代には灯台、ない記念碑を変換します。");
+                        $("div#fourthTextRect p").html("城の学習");
+                        $("p#introTitle_4").html("東インド会社の市");
+                        $("p#introText_4").html("");
                     }
                 );
                 
@@ -183,14 +219,6 @@
                  
             }
         );
-        
-        var centerTexts = 
-        [
-            "回 顧 ， 東 興 洋 行" , 
-            "閱 覽 ， 台 南 運 河" ,
-            "造 訪 ， 周 式 蝦 捲" ,
-            "探 索 ， 安 平 古 堡"
-        ];
         
         var count4 = 0;
         var showed = false;
