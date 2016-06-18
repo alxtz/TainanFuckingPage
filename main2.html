@@ -59,6 +59,61 @@
                         $("div#imgBox2_4").animate({opacity:"0" , bottom:"0px" , left:"0px"} , 200);
                     }
                 );
+                
+                $("div#fifthTextBlock").hover
+                (
+                    function()
+                    {
+                        $("div#fifthTextRect").css({"background-color":"white"});
+                        $("div#fifthTextRect p").css({"color":"rgb(30 , 30 , 30)"});
+                        $("div#imgBox1_5").animate({opacity:"1" , right:"20px" , top:"20px"} , 200);
+                        $("div#imgBox2_5").animate({opacity:"1" , bottom:"20px" , left:"20px"} , 200);
+                    },
+                    function()
+                    {
+                        $("div#fifthTextRect").css({"background-color":"transparent"});
+                        $("div#fifthTextRect p").css({"color":"white"});
+                        $("div#imgBox1_5").animate({opacity:"0" , right:"0" , top:"0"} , 200);
+                        $("div#imgBox2_5").animate({opacity:"0" , bottom:"0px" , left:"0px"} , 200);
+                    }
+                );
+                
+                $("div#sixthTextBlock").hover
+                (
+                    function()
+                    {
+                        $("div#sixthTextRect").css({"background-color":"white"});
+                        $("div#sixthTextRect p").css({"color":"rgb(30 , 30 , 30)"});
+                        $("div#imgBox1_6").animate({opacity:"1" , right:"20px" , top:"20px"} , 200);
+                        $("div#imgBox2_6").animate({opacity:"1" , bottom:"20px" , left:"20px"} , 200);
+                    },
+                    function()
+                    {
+                        $("div#sixthTextRect").css({"background-color":"transparent"});
+                        $("div#sixthTextRect p").css({"color":"white"});
+                        $("div#imgBox1_6").animate({opacity:"0" , right:"0" , top:"0"} , 200);
+                        $("div#imgBox2_6").animate({opacity:"0" , bottom:"0px" , left:"0px"} , 200);
+                    }
+                );
+                
+                $("div#seventhTextBlock").hover
+                (
+                    function()
+                    {
+                        $("div#seventhTextRect").css({"background-color":"white"});
+                        $("div#seventhTextRect p").css({"color":"rgb(30 , 30 , 30)"});
+                        $("div#imgBox1_7").animate({opacity:"1" , right:"20px" , top:"20px"} , 200);
+                        $("div#imgBox2_7").animate({opacity:"1" , bottom:"20px" , left:"20px"} , 200);
+                    },
+                    function()
+                    {
+                        $("div#seventhTextRect").css({"background-color":"transparent"});
+                        $("div#seventhTextRect p").css({"color":"white"});
+                        $("div#imgBox1_7").animate({opacity:"0" , right:"0" , top:"0"} , 200);
+                        $("div#imgBox2_7").animate({opacity:"0" , bottom:"0px" , left:"0px"} , 200);
+                    }
+                );
+                
             }
         );
         
@@ -662,12 +717,12 @@
                     
                     div#imgBox2_4 #child2_4
                     {
-                    position: absolute;
-                    width:26%;
-                    height: 100%;
-                    bottom:0;
-                    left:0;
-                    background-color: white;
+                        position: absolute;
+                        width:26%;
+                        height: 100%;
+                        bottom:0;
+                        left:0;
+                        background-color: white;
                     }
                     
                 div#fourthTextBlock div#fourthArrow
@@ -739,6 +794,159 @@
                 width:100%;
                 height:50%;
             }
+                div#fifthTextBlock a#fifthLeftBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:40%;
+                    height:100%;
+                    left:0;
+                    background-color: black;
+                }
+                    div#fifthTextBlock img
+                    {
+                        position: absolute;
+                        width:100%;
+                        height:100%;
+                    }
+                    div#fifthTextRect
+                    {
+                        position: relative;
+                        width:265px;
+                        height:80px;
+                        border: 3px solid white;
+                        margin:auto;
+                        top:38%;
+                    }
+                        div#fifthTextRect p
+                        {
+                            display: block;
+                            color: white;
+                            position: absolute;
+                            font-family: 'cwTeXHei', sans-serif;
+                            font-size:28px;
+                            width:100%;
+                            text-align: center;
+                            top:-4px;
+                        }
+                    div#imgBox1_5
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        top:0px;
+                        right:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox1_5 #child1_5
+                    {
+                        position: absolute;
+                        width:100%;
+                        height: 25%;
+                        top:0;
+                        right:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox1_5 #child2_5
+                    {
+                        position: absolute;
+                        width:26%;
+                        height: 100%;
+                        top:0;
+                        right:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox2_5
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        bottom:0px;
+                        left:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox2_5 #child1_5
+                    {
+                        position: absolute;
+                        width:100%;
+                        height: 25%;
+                        bottom:0;
+                        left:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox2_5 #child2_5
+                    {
+                        position: absolute;
+                        width:26%;
+                        height: 100%;
+                        bottom:0;
+                        left:0;
+                        background-color: white;
+                    }
+                div#fifthTextBlock div#fifthArrow
+                {
+                    position: absolute;
+                    width:0;
+                    height:0;
+                    border-top: 20px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-right:20px solid rgb(5 , 11 , 20); 
+                    right:60%;
+                    top:45%;
+                }
+                div#fifthTextBlock div#fifthRightBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:60%;
+                    height:100%;
+                    right:0;
+                    background-color:rgb(5 , 11 , 20);
+                }
+                    div#fifthTextBlock div#fifthRightBlock p#introTitle_5
+                    {
+                        position: static;
+                        width:50%;
+                        height:20px;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:7%;
+                        color:rgb(189 , 144 , 47);
+                    }
+                    div#fifthTextBlock div#fifthRightBlock div#introLine_5
+                    {
+                        position: static;
+                        width:80%;
+                        height:1px;
+                        background-color: grey;
+                        margin:auto;
+                        margin-top:2%;
+                        margin-bottom:0%;
+                        opacity:0.3;
+                    }
+                    div#fifthTextBlock div#fifthRightBlock p#introText_5
+                    {
+                        position: static;
+                        width:75%;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:3%;
+                        color:white;
+                        line-height: 200%;
+                    }
+                    
+            
+            
+            
+            
+            
             
             /*這是其他次要區域的div*/
             div#sixthTextBlock
@@ -750,6 +958,151 @@
                 width:100%;
                 height:50%;
             }
+                div#sixthTextBlock a#sixthRightBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:40%;
+                    height:100%;
+                    right:0;
+                    background: red;
+                }
+                div#sixthTextBlock img
+                {
+                    position: absolute;
+                    width:100%;
+                    height:100%;
+                }
+                    div#sixthTextRect
+                    {
+                        position: relative;
+                        width:265px;
+                        height:80px;
+                        border: 3px solid white;
+                        margin:auto;
+                        top:38%;
+                    }
+                        div#sixthTextRect p
+                        {
+                            display: block;
+                            color: white;
+                            position: absolute;
+                            font-family: 'cwTeXHei', sans-serif;
+                            font-size:28px;
+                            left:78px;
+                        }
+                    div#imgBox1_6
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        top:0px;
+                        right:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox1_6 #child1_6
+                    {
+                        position: absolute;
+                        width:100%;
+                        height: 25%;
+                        top:0;
+                        right:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox1_6 #child2_6
+                    {
+                        position: absolute;
+                        width:26%;
+                        height: 100%;
+                        top:0;
+                        right:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox2_6
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        bottom:0px;
+                        left:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox2_6 #child1_6
+                    {
+                        position: absolute;
+                        width:100%;
+                        height: 25%;
+                        bottom:0;
+                        left:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox2_6 #child2_6
+                    {
+                        position: absolute;
+                        width:26%;
+                        height: 100%;
+                        bottom:0;
+                        left:0;
+                        background-color: white;
+                    }
+                div#sixthTextBlock div#sixthArrow
+                {
+                    position: absolute;
+                    width:0;
+                    height:0;
+                    border-top: 20px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-left:20px solid white; 
+                    left:60%;
+                    top:45%;
+                }
+                div#sixthTextBlock div#sixthLeftBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:60%;
+                    height:100%;
+                    left:0;
+                    background-color:white;
+                }
+                    div#sixthTextBlock div#sixthLeftBlock p#introTitle_6
+                    {
+                        position: static;
+                        width:50%;
+                        height:20px;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:7%;
+                        color:rgb(189 , 144 , 47);
+                    }
+                    div#sixthTextBlock div#sixthLeftBlock div#introLine_6
+                    {
+                        position: static;
+                        width:80%;
+                        height:1px;
+                        background-color: grey;
+                        margin:auto;
+                        margin-top:2%;
+                        margin-bottom:0%;
+                        opacity:0.3;
+                    }
+                    div#sixthTextBlock div#sixthLeftBlock p#introText_6
+                    {
+                        position: static;
+                        width:75%;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:3%;
+                        color:black;
+                        line-height: 200%;
+                    }
             
             /*這是其他次要區域的div*/
             div#seventhTextBlock
@@ -761,6 +1114,152 @@
                 width:100%;
                 height:50%;
             }
+                div#seventhTextBlock a#seventhLeftBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:40%;
+                    height:100%;
+                    left:0;
+                    background-color: red;
+                }
+                div#seventhTextBlock img
+                {
+                    position: absolute;
+                    width:100%;
+                    height:100%;
+                }
+                    div#seventhTextRect
+                    {
+                        position: relative;
+                        width:265px;
+                        height:80px;
+                        border: 3px solid white;
+                        margin:auto;
+                        top:38%;
+                    }
+                        div#seventhTextRect p
+                        {
+                            display: block;
+                            color: white;
+                            position: absolute;
+                            font-family: 'cwTeXHei', sans-serif;
+                            font-size:28px;
+                            left:78px;
+                        }
+                    div#imgBox1_7
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        top:0px;
+                        right:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox1_7 #child1_7
+                    {
+                        position: absolute;
+                        width:100%;
+                        height: 25%;
+                        top:0;
+                        right:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox1_7 #child2_7
+                    {
+                        position: absolute;
+                        width:26%;
+                        height: 100%;
+                        top:0;
+                        right:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox2_7
+                    {
+                        position: absolute;
+                        width:35px;
+                        height:35px;
+                        background-color: transparent;
+                        bottom:0px;
+                        left:0px;
+                        opacity: 0;
+                    }
+                    
+                    div#imgBox2_7 #child1_7
+                    {
+                        position: absolute;
+                        width:100%;
+                        height: 25%;
+                        bottom:0;
+                        left:0;
+                        background-color: white;
+                    }
+                    
+                    div#imgBox2_7 #child2_7
+                    {
+                        position: absolute;
+                        width:26%;
+                        height: 100%;
+                        bottom:0;
+                        left:0;
+                        background-color: white;
+                    }
+                div#seventhTextBlock div#seventhArrow
+                {
+                    position: absolute;
+                    width:0;
+                    height:0;
+                    border-top: 20px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-right:20px solid rgb(5 , 11 , 20); 
+                    right:60%;
+                    top:45%;
+                }
+                div#seventhTextBlock div#seventhRightBlock
+                {
+                    display: block;
+                    position: absolute;
+                    width:60%;
+                    height:100%;
+                    right:0;
+                    background-color:rgb(5 , 11 , 20);
+                }
+                    div#seventhTextBlock div#seventhRightBlock p#introTitle_7
+                    {
+                        position: static;
+                        width:50%;
+                        height:20px;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:7%;
+                        color:rgb(189 , 144 , 47);
+                    }
+                    div#seventhTextBlock div#seventhRightBlock div#introLine_7
+                    {
+                        position: static;
+                        width:80%;
+                        height:1px;
+                        background-color: grey;
+                        margin:auto;
+                        margin-top:2%;
+                        margin-bottom:0%;
+                        opacity:0.3;
+                    }
+                    div#seventhTextBlock div#seventhRightBlock p#introText_7
+                    {
+                        position: static;
+                        width:75%;
+                        text-align: center;
+                        margin:auto;
+                        margin-top:3%;
+                        color:white;
+                        line-height: 200%;
+                    }
+                    
             
         </style>
     </head>
@@ -842,22 +1341,67 @@
                 <p id="introTitle_4">三 級 古 蹟 餐 廳</p>
                 <div id="introLine_4"></div>
                 <p id="introText_4">
-                    原德商東興洋行原名為「Julius Mannich & CO.」。是直轄市定古蹟、安平五洋行之一。現在該建築是「安平外商貿易紀念館」。展示安平港昔日外貿的歷史，另外也展示了一些與德國相關的事物。而在建築的前庭，則設有劍橋大飯店經營的露天餐廳。
+                    原德商東興洋行原名為「Julius Mannich & CO.」。是直轄市定古蹟、安平五洋行之一。民國七十五年成為」安平外商貿易紀念館」，展出安平貿易史略及相關產業，在濃密的枝葉襯托下，石砌成的台基，將地板面高高拱起，台基下以磚砌圓拱，保留通風防潮。紅柱白牆，綠欄灰階，東興洋行呈顯當年中西合璧的洋商氣派。展示安平港昔日外貿的歷史，另外也展示了一些與德國相關的事物。而在建築的前庭，則設有劍橋大飯店經營的露天餐廳。
                 </p>
             </div>
             <div id="fourthArrow"></div>
         </div>
         
         <div id="fifthTextBlock">
-            
+            <a id="fifthLeftBlock" href="http://culture.tainan.gov.tw/historic/form/index-1.php?m2=171&id=718">
+                <img src="oldWell.jpg">
+                <div id="fifthTextRect">
+                    <p>豆菜芽仔井</p>
+                </div>
+                <div id="imgBox1_5"><div id="child1_5"></div><div id="child2_5"></div></div>
+                <div id="imgBox2_5"><div id="child1_5"></div><div id="child2_5"></div></div>
+            </a>
+            <div id="fifthArrow"></div>
+            <div id="fifthRightBlock">
+                <p id="introTitle_5">給 豆 菜 喝 的 井 水</p>
+                <div id="introLine_5"></div>
+                <p id="introText_5">
+                    延平街古井位於臺南市安平區，是直轄市定古蹟。此井具體創建時間不明，一說約為荷蘭人建造熱蘭遮城之時所建。於咸豐年間整修過，而另一說則認為該井到清咸豐年間才建造。該井在過去是安平一帶屈指可數的淡水井。到了臺灣日治時期，由於在安平一帶裝設了自來水管道，所以井水不再有人打來飲用。不過該井並未因此荒廢，而是被當地居民拿來打孵豆芽用的水。由於用該井之水孵育的豆芽菜味道鮮美。古井附近遂被稱為「豆菜寮」，而井也被稱為「豆菜芽仔井」。
+                </p>
+            </div>
         </div>
         
         <div id="sixthTextBlock">
-            
+            <a id="sixthRightBlock" href="https://www.youtube.com/embed/7HuapmcN-gI">
+                <img src="chouShrimp.jpg">
+                <div id="sixthTextRect">
+                    <p>蝦捲傳奇</p>
+                </div>
+                <div id="imgBox1_6"><div id="child1_6"></div><div id="child2_6"></div></div>
+                <div id="imgBox2_6"><div id="child1_6"></div><div id="child2_6"></div></div>
+            </a>
+            <div id="sixthArrow"></div>
+            <div id="sixthLeftBlock">
+                <p id="introTitle_6">小 吃 滿 漢 全 席</p>
+                <div id="introLine_6"></div>
+                <p id="introText_6">
+                    周氏蝦捲源自於1965年，當時周進根先生是辦外燴的〔總舖師〕，而外燴不是天天都有生意，於是在閒暇時於經營小吃生意，當時販賣多種小吃，而蝦捲是其中一道菜。到了1980年將原本的蝦捲加以改良，以新鮮蝦仁為主做成的蝦捲深受消費者的喜愛，用本身之姓氏〝周〞為店號，取名為〔周氏蝦捲〕。經過十多年的努力經營，將傳統小吃店的經營型態，成為台灣極具規模與份量的餐飲店。暢銷產品有蝦捲，白北魚粳，擔仔麵...，是許多人到安平必吃的小吃之一。
+                </p>
+            </div>
         </div>
         
         <div id="seventhTextBlock">
-            
+            <a id="seventhLeftBlock" href="https://www.youtube.com/embed/N4bYAqRniXY">
+                <img src="canal.jpg">
+                <div id="seventhTextRect">
+                    <p>運河風光</p>
+                </div>
+                <div id="imgBox1_7"><div id="child1_7"></div><div id="child2_7"></div></div>
+                <div id="imgBox2_7"><div id="child1_7"></div><div id="child2_7"></div></div>
+            </a>
+            <div id="seventhArrow"></div>
+            <div id="seventhRightBlock">
+                <p id="introTitle_7">老 台 南 新 風 貌</p>
+                <div id="introLine_7"></div>
+                <p id="introText_7">
+                    台南運河最早由日本人松本虎太設計，用以讓外海船隻能循水路直抵市中心，帶動市區繁榮。在70年代，運河盲段遭台南市政府填平，通往新建的五期重劃區，使得近海船隻無法進入，周圍生意一落千丈，成為當地居民認為的「臭水溝」。近年來，台南市政府推動整治運河，包括凈化運河水質，建設周圍景觀。現今的台南運河已經逐漸恢復了水質，景色日夜優美，成為安平居民的新生活圈。
+                </p>
+            </div>
         </div>
         
     </body>
