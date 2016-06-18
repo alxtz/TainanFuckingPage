@@ -118,16 +118,69 @@
                 (
                     function()
                     {
-                        $("div#stack2").animate({top:"-10%"} , 200);
-                        $("div#stack3").animate({top:"90%"} , 200);
+                        $("div#stack2").animate({top:"-10%"} , 100);
+                        $("div#stack3").animate({top:"90%"} , 100);
                     },
                     function()
                     {
-                        $("div#stack2").animate({top:"0"} , 200);
-                        $("div#stack3").animate({top:"80%"} , 200);
+                        $("div#stack2").animate({top:"0"} , 100);
+                        $("div#stack3").animate({top:"80%"} , 100);
                     }
                 );
                 
+                $("div#menuButton").click
+                (
+                    function()
+                    {
+                        $("div#menu").css({"visibility":"visible"});
+                        $("div#menu").animate({opacity:"1"} , 200);
+                        $("div#leaveButton").css({"visibility":"visible"});
+                        $("div#leaveButton").animate({opacity:"1"} , 200);
+                    }
+                );
+                
+                $("div#leaveButton").click
+                (
+                    function()
+                    {
+                        $("div#menu").animate({opacity:"0"} , 200);
+                        $("div#leaveButton").animate({opacity:"0"} , 200);
+                        setTimeout
+                        (
+                            function()
+                            {
+                                $("div#menu").css({"visibility":"hidden"});
+                                $("div#leaveButton").css({"visibility":"hidden"});
+                            },
+                            200  
+                        );
+                    }
+                );
+                
+                $("p#chinese").click
+                (
+                    function()
+                    {
+                        alert("chinese");
+                    }
+                );
+                
+                $("p#japanese").click
+                (
+                    function()
+                    {
+                        alert("japanese");
+                    }
+                );
+                
+                $("p#english").click
+                (
+                    function()
+                    {
+                        alert("english");
+                    }
+                );
+                 
             }
         );
         
@@ -795,6 +848,7 @@
                         margin-top:3%;
                         color:black;
                         line-height: 200%;
+                        
                     }
             
             
@@ -1328,7 +1382,98 @@
                 top:0;
                 left:0;
                 z-index:10;
+                
+                opacity: 0;
+                visibility: hidden;
             }
+                div#leaveButton
+                {
+                    position: absolute;
+                    width:45px;
+                    height:45px;
+                    right:8%;
+                    top:7.5%;
+                    background-color: transparent;
+                    cursor:pointer;
+                    
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                    div#X1
+                    {
+                        position: absolute;
+                        width:120%;
+                        height:20%;
+                        left:-10%;
+                        top:40%;
+                        background-color: white;
+                        transform: rotate(45deg);
+                    }
+                    div#X2
+                    {
+                        position: absolute;
+                        width:120%;
+                        height:20%;
+                        left:-10%;
+                        top:40%;
+                        background-color: white;
+                        transform: rotate(135deg);
+                    }
+                img#maubiFloat
+                {
+                    position: fixed;
+                    top:4%;
+                    left:4%;
+                    width:50%;
+                    height:32%;
+                    z-index: 20;
+                }
+                p#languageChoose
+                {
+                   position: fixed;
+                   color:white;
+                   z-index: 20;
+                   left: 7%;
+                   top:32%;
+                   font-size:40px;
+                   font-family: 'cwTeXFangSong', serif;
+                }
+                p#chinese
+                {
+                   position: fixed;
+                   color:lightgreen;
+                   z-index: 20;
+                   left: 45%;
+                   top:25%;
+                   font-size:100px;
+                   font-weight:500;
+                   font-family: 'cwTeXFangSong', serif;
+                }
+                p#japanese
+                {
+                   position: fixed;
+                   color:rgb(255 , 38 , 38);
+                   z-index: 20;
+                   left: 70%;
+                   top:15%;
+                   font-size:100px;
+                   font-weight:500;
+                   font-family: 'cwTeXFangSong', serif;
+                }
+                p#english
+                {
+                   position: fixed;
+                   color:lightblue;
+                   z-index: 20;
+                   left: 38%;
+                   top:60%;
+                   font-size:100px;
+                   font-weight:500;
+                   font-family: 'cwTeXFangSong', serif;
+                }
+                
+                
+                
                     
             
         </style>
@@ -1338,6 +1483,15 @@
     <body>
         
         <div id="menu">
+            <div id="leaveButton">
+                <div id="X1"></div>
+                <div id="X2"></div>
+            </div>
+            <img src="maubi.png" id="maubiFloat">
+            <p id="languageChoose">語言選擇</p>
+            <p id="chinese">中文。</p>
+            <p id="japanese">日<br/>本</br>語<br/>。</p>
+            <p id="english">English.</p>
         </div>
         
         <!-- VIDEO  BLOCK -->
